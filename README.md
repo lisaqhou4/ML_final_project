@@ -1,3 +1,5 @@
 # ML_final_project
-#Include a README with basic instructions on how to run your code. We probably won’t run your code, but the README should be enough for us to understand how your code is meant to be used. You don’t need to include the data if it’s large or you don’t have permission to share it.
-#The preprocessing, training, and evaluating code is all contained in Final_Project_Final_Version.ipynb. The manually labeled data that we used to train the model is in the 
+#The preprocessing, training, and evaluating code are all contained in Final_Project_Final_Version.ipynb. The manually labeled data that we used to train the model is in the data_1106_labeled folder. This notebook first sets up the pretrain model, define training and evaluation function. Then it imports and preprocess the data. The model is then fine-tuned using the tokenized and clean datasets.  The comparison and evaluation between Fine-tuned & Pre-trained model, non Fine-tuned & Pre-trained model, and non Fine-tuned & non Pre-trained model are also performed in this notebook. 
+
+
+To make prediction on tweets, run the TCM_Prediction.ipynb which imported our optimal model [fine_tune_model_dict_shuffle_llr_gen_entire.bin ](https://drive.google.com/file/d/1--7Va7et8ep0IF-FrHn2kxvrZ8I60dtu/view?usp=sharing) (too large to upload to git repository.) TCM_Prediction.ipynb preprocess the raw tweets, add tokens, and then make predictions on the tweets and also produce visualization.
